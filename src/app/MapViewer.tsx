@@ -1,4 +1,7 @@
 // components/MapViewer.tsx
+
+"use client";
+
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { Layout, Data } from "plotly.js-dist-min"; // or "plotly.js"
