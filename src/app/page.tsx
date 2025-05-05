@@ -115,8 +115,12 @@ export default function Home() {
   return (
     <div className="p-8">
       <Head>
-        <title>US Climate, GDP, Hospitality, and Ski Visits Visualization</title>
+        <title>Economic Impact of Climate Change on States</title>
       </Head>
+
+      <h1 className="text-2xl font-bold mb-4">
+        US Climate, GDP, Hospitality, and Ski Visits by State
+      </h1>
       <MapViewer />
     </div>
   );
