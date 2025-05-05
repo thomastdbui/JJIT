@@ -31,7 +31,7 @@ export default function MapViewer() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">
-        Climate & GDP by State - {year}
+        Climate, GDP, Hospitality, and Ski Visits by State - {year}
       </h1>
       <select
         value={year}
