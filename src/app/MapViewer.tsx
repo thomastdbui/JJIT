@@ -1,14 +1,21 @@
 // components/MapViewer.tsx
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import { Layout, Data } from "plotly.js-dist-min"; // or "plotly.js"
 
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
-const AVAILABLE_YEARS = Array.from({ length: 2025 - 1975 }, (_, i) => 1975 + i);
+const AVAILABLE_YEARS = Array.from({ length: 2023 - 1998 }, (_, i) => 1998 + i);
 
 export default function MapViewer() {
   const [year, setYear] = useState<number>(2020);
-  const [plotData, setPlotData] = useState<any>(null);
+
+//   const [plotData, setPlotData] = useState<null>(null);
+  const [plotData, setPlotData] = useState<{
+    data: Data[];
+    layout: Partial<Layout>;
+  } | null>(null);
+
 
   useEffect(() => {
     fetch(`/maps/${year}.json`)
