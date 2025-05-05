@@ -9,7 +9,7 @@ import { Layout, Data } from "plotly.js"; // or "plotly.js"
 
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
-const AVAILABLE_YEARS = Array.from({ length: 2023 - 1998 }, (_, i) => 1998 + i);
+const AVAILABLE_YEARS = Array.from({ length: 2024 - 1998 }, (_, i) => 1998 + i);
 
 export default function MapViewer() {
   const [year, setYear] = useState<number>(1998);
