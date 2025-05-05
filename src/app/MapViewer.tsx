@@ -30,9 +30,9 @@ export default function MapViewer() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-4">
-        Climate, GDP, Hospitality, and Ski Visits by State - {year}
-      </h1>
+      <h3 className="text-2xl font-bold mb-4">
+        US Climate, GDP, Hospitality, and Ski Visits by State - {year}
+      </h3>
       <select
         value={year}
         onChange={(e) => setYear(Number(e.target.value))}
