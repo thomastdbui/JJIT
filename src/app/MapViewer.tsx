@@ -4,7 +4,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { Layout, Data } from "plotly.js-dist-min"; // or "plotly.js"
+import { Layout, Data } from "plotly.js"; // or "plotly.js"
 
 
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
