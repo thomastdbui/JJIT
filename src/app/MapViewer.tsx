@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { Layout, Data } from "plotly.js-dist-min"; // or "plotly.js"
 
+
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 const AVAILABLE_YEARS = Array.from({ length: 2023 - 1998 }, (_, i) => 1998 + i);
