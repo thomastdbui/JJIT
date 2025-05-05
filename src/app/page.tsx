@@ -117,10 +117,6 @@ export default function Home() {
       <Head>
         <title>Economic Impact of Climate Change on States</title>
       </Head>
-
-      <h1 className="text-2xl font-bold mb-4 text-center">
-        Economic Impact of Climate Change on States
-      </h1>
       <MapViewer />
     </div>
   );
